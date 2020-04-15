@@ -181,6 +181,7 @@
   &-author {
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar {
       width: 30px;
       height: 30px;
@@ -196,16 +197,54 @@
       font-weight: 500;
     }
   }
+  &-star {
+    font-size: 12px;
+    span {
+      color: $bg;
+    }
+  }
 }
+
 .products__bottom-btn {
   text-align: center;
+  padding: 40px 125px;
   &-product__btn {
     margin: 45px 5px 0;
     box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
-    padding: 20px 30px;
     border: none;
     background-color: #fff;
     color: $bg;
     cursor: pointer;
+  }
+}
+.product__slider {
+  padding: 110px 0px 120px;
+}
+.slick-track {
+  display: flex;
+}
+.slick-dots {
+  margin-top: 70px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  &.slick-active {
+    button {
+      background-color: $green;
+    }
+  }
+  button {
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    border: none;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    outline: none;
   }
 }
