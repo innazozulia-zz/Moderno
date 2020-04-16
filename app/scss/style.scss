@@ -345,3 +345,32 @@ li {
   }
 
 }
+.tutorial{
+  padding: 70px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    }
+  }
+}
+.tutorial__item{
+  &-img{
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 370px;
+    width: 100%;
+  }
+  &-text{
+    background-color: #f8f8f8;
+    font-size: 24px;
+    text-align: center;
+    color: $bg;
+    @include f700;
+    padding: 30px 10px;   
+  }
+}
