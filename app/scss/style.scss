@@ -308,4 +308,40 @@ li {
   font-size: 15px;
   line-height: 24px;
 }
+.author{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box{
+    max-width: 655px;
+    width: 100%;
+    min-height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title{
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 45px;
+    max-width: 270px;
+    span{
+      @include f700;
+    }
+  }
+  &__btn{
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    padding: 15px 40px;
+    background-color: #fff;
 
+  }
+
+}
