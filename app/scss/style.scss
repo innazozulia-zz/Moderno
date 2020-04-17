@@ -258,8 +258,8 @@ li {
   .advanteges__item{
     max-width: 370px;
     text-align: center;
-    padding: 0px 15px;
-    
+    padding: 0px 15px; 
+
     &:hover{
       .advanteges__icon-images{
         background-color: $green;
@@ -374,3 +374,161 @@ li {
     padding: 30px 10px;   
   }
 }
+.footer{
+  background-color: $bg;
+  &__inner{
+    padding: 110px 0 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__item{
+  max-width: 275px;
+  width: 100%;
+  &-menu{
+    max-width: 230px;
+  }
+  &-title{
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }    
+  }
+  &-text{
+  color: #b7c3c8;
+  @include f500;
+  margin-bottom: 30px;
+  }
+}
+.footer__info{
+  font-family: 'Lato', sans-serif;
+  margin-top: 18px;
+  color: #fff;
+  padding-left: 30px;
+  font-weight: 700;
+  position: relative;
+  &::before{
+    content: "\f041";
+    font-family: "icomoon";
+    color: $green;
+    font-size: 18px;
+    position: absolute;
+    left:0;
+  }
+}
+.footer__info-phone{
+  &::before{
+    content: "\f095";
+  }
+}
+.footer__item-list{
+  a{
+    margin-bottom: 13px;
+    color: #b7c3c8;
+    padding-left: 22px;
+    padding-right: 45px;
+    position: relative;
+    &::before{
+      content: "\f054";
+      font-family: "icomoon";
+      color: $green;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+.footer__link{
+margin-bottom: 33px;
+li{
+  & + li{
+    margin-left: 7px;
+  }
+}
+a{
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/css_sprites.png);
+  }
+}
+.link-twitter{
+  background-position: -28px 0;
+
+}
+.link-youtube{
+  background-position: -56px 0;
+
+}
+.link-pinterest{
+  background-position: -84px 0;
+}
+.link-linkin{
+  background-position: -112px 0;
+}
+.footer__form-title{
+  font-size: 20px;   
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer__form{
+  position: relative;
+  input{
+    padding-left: 13px;
+    padding-right: 50px;
+    background-color: #2f3c43;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    &::placeholder {
+    color: #5c666b;
+    }
+  }
+  button{
+   bottom: 0;;
+    right: 0;
+    background-color: $green;
+    position: absolute;
+    border: none;
+    height: 40px;
+    width: 45px;
+    cursor: pointer;
+    &::before{
+      content: "\f124";
+      font-family: "icomoon";
+      font-size: 20px;
+      color: #fff;
+    }
+
+  }
+}
+// .placeholder{
+//   color: #5c666b;
+// }
+.footer__copy{
+  min-height: 75px;
+  border-top: 2px solid #424d53;
+ }
+.footer__copy-text{
+  padding: 30px 0px;
+  font-size: 15px;
+  color: #919699;
+  line-height: 36px;
+  @include f700;
+  text-align: center;
+}
+
