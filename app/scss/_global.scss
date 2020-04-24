@@ -6,8 +6,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
-.box {
-  display: flex;
+html,
+body {
+  height: 100%;
 }
 a {
   display: inline-block;
@@ -27,6 +28,18 @@ body {
   font-weight: 400;
   color: $text;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,7 +55,10 @@ body {
     padding: 0 15px;
   }
 }
-
+.page-content,
+.product-page {
+  background-color: $grey;
+}
 .title {
   color: $bg;
   font-weight: 700;
@@ -56,6 +72,40 @@ body {
   display: inline-block;
   margin-right: 13px;
 }
-// .jq-ry-normal-group .jq-ry-group {
-//   display: none;
-// }
+.rate-star.jq-ry-container {
+  .jq-ry-group-wrapper {
+    .jq-ry-normal-group.jq-ry-group {
+      visibility: hidden;
+    }
+  }
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 45px 0 40px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 0;
+          color: $green;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+    }
+    a {
+      color: #b0bec5;
+    }
+  }
+}
