@@ -22,6 +22,7 @@ $(function () {
     $(".icon-th-large").addClass("active");
     $(".icon-th-list").removeClass("active");
   });
+
   // var range = document.getElementById("range");
 
   // noUiSlider.create(range, {
